@@ -1,0 +1,105 @@
+:root {
+    /*Primary colors*/
+       --Primary-White: hsl(0, 0%, 100%);
+       --Primary-Light-Grey: hsl(217, 12%, 63%);
+    /*Neutral colors*/
+       --Neutral-Medium-Grey: hsl(215, 31%, 25%);
+       --Neutral-Dark-Blue: hsl(213, 19%, 18%);
+       --Neutral-Very-Dark-Blue: hsl(216, 12%, 8%);
+    /*font family*/
+    --FF-Primary: 'Mochiy Pop P One', sans-serif;
+    --FF-Secondary: 'Overpass', sans-serif;
+    --FF-third: 'Rubik', sans-serif;
+    /*secondary color*/
+    --Secondary-Orange: hsl(25, 97%, 53%);
+   }
+
+li,
+ul,
+ol {
+  list-style: none;
+  
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+  }
+
+   
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+    
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+
+
+body{
+    font-size: 15px;
+    background-color: var(--Neutral-Very-Dark-Blue);
+    font-family: var(--FF-Secondary);
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+   
+}
+
+
+main{
+    background-color: var(--Neutral-Dark-Blue);
+    border-radius: 1.5rem;
+    
+}
+
+
+/*the rating selected*/
+.selected_container{
+    background-color:var(--Neutral-Medium-Grey);
+    width: 11.5rem;
+    height: 2rem;
+    align-items: center;
+}
+.selected{
+    color: var(--Secondary-Orange);
+}
+
+
+h1{
+    color: var(--Primary-White);
+    font-size: 1.8rem;
+}
+
+
+.text{
+    color: var(--Primary-Light-Grey);
+    text-align: center;
+    margin-top: -1rem;
+    padding: 0rem .4rem 0rem .4rem;
+}
+
+
+
+
+/*media queries*/
+@media (max-width: 1070px){
+    main{
+       width: 20rem!important;
+    }
+}
